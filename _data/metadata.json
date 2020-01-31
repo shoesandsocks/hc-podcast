@@ -1,0 +1,30 @@
+{
+  "title": "Quotes from Howard Chicken",
+  "url": "https://howardchicken.com",
+  "description": "That bird. That voice.",
+  "author": {
+    "name": "Howard",
+    "email": "howard@howardchicken.com"
+  },
+  "podcastFeed": {
+    "title": "Quotes from Howard Chicken - a Podcast",
+    "link": "https://www.porknachos.com",
+    "language": "en-us",
+    "copyright": "This work is licensed under a Creative Commons License - Attribution 4.0 International (CC BY 4.0)",
+    "creativeCommonsLicenseLink": "http://creativecommons.org/licenses/by/4.0/",
+    "ttl": "60",
+    "updatePeriod": "weekly",
+    "updateFrequency": "1",
+    "image": "https://www.porknachos.com/files/podcasts/white-robot.jpeg",
+    "category": "Comedy",
+    "subcategory": "Improv",
+    "keywords": "howard chicken B2W",
+    "explicit": "false",
+    "type": "episodic",
+    "subtitle": "Howard Speaks!",
+    "description": "Non-sequiturs, podcast-style.",
+    "url": "https://www.porknachos.com/podcast/pod.xml",
+    "directory": "/episodes/",
+    "episodeType": "full"
+  }
+}

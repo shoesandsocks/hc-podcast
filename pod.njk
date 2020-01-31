@@ -1,0 +1,77 @@
+---
+permalink: /pod.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  version="2.0"
+>
+  <channel>
+    <title>{{ metadata.podcastFeed.title }}</title>
+    <link>{{ metadata.podcastFeed.link }}</link>
+    <language> {{ metadata.podcastFeed.language }}</language>
+    <copyright>{{ metadata.podcastFeed.copyright }}</copyright>
+    <creativeCommons:license>{{ metadata.podcastFeed.creativeCommonsLicenseLink }}</creativeCommons:license>
+    <webMaster>{{ metadata.author.name }}</webMaster>
+    <managingEditor>{{ metadata.author.name }}</managingEditor>
+    <ttl>{{ metadata.podcastFeed.ttl }}</ttl>
+    <sy:updatePeriod>{{ metadata.podcastFeed.updatePeriod }}</sy:updatePeriod>
+    <sy:updateFrequency>{{ metadata.podcastFeed.updateFrequency }}</sy:updateFrequency>
+    <image>
+      <url>{{metadata.podcastFeed.image}}</url>
+      <title>{{ metadata.podcastFeed.title }}</title>
+      <link>{{ metadata.podcastFeed.link }}</link>
+      <width>300</width>
+      <height>300</height>
+    </image>
+
+    <itunes:image href="{{ metadata.podcastFeed.image}}" />
+    <itunes:owner>
+      <itunes:name>{{ metadata.author.name}}</itunes:name>
+      <itunes:email>{{ metadata.author.email}}</itunes:email>
+    </itunes:owner>
+    <itunes:category text="{{ metadata.podcastFeed.category}}">
+      <itunes:category text="{{ metadata.podcastFeed.subcategory}}" />
+    </itunes:category>
+    <itunes:keywords>{{ metadata.podcastFeed.keywords}}</itunes:keywords>
+    <itunes:explicit>{{ metadata.podcastFeed.explicit}}</itunes:explicit>
+    <itunes:type>{{ metadata.podcastFeed.type }}</itunes:type>
+
+    <itunes:subtitle>{{ metadata.podcastFeed.subtitle }}</itunes:subtitle>
+    <itunes:author>{{ metadata.author.name }}</itunes:author>
+    <description>{{ metadata.podcastFeed.description }}</description>
+    <itunes:summary>{{ metadata.podcastFeed.description }}</itunes:summary>
+
+    <lastBuildDate>{{ collections.podcasts | rssLastUpdatedDate }}</lastBuildDate>
+    <pubDate>{{ collections.podcasts | rssLastUpdatedDate }}</pubDate>
+    <atom:link href="{{ metadata.podcastFeed.url }}" rel="self" type="application/rss+xml" />
+
+    {%- for post in collections.podcasts | reverse %}
+      <item>
+        <link>{{ metadata.podcastFeed.link + metadata.podcastFeed.directory + post.data.episode + "/index.html" }}</link>
+        <comments>{{ metadata.podcastFeed.link + metadata.podcastFeed.directory + post.data.episode + "/index.html" }}</comments>
+        <title>{{ post.data["id3-title"] }}</title>
+        <itunes:title>{{ post.data["id3-title"] }}</itunes:title>
+        <itunes:subtitle>{{ post.data.subtitle }}</itunes:subtitle>
+        <itunes:episode>{{ post.data["id3-track"] }}</itunes:episode>
+        <itunes:episodeType>{{metadata.podcastFeed.episodeType}}</itunes:episodeType>
+        <description>{{ post.data.description | cdataEncode }}</description>
+        <itunes:summary>{{ post.data.summary | cdataEncode }}</itunes:summary>
+        <content:encoded>{{ post.data.summary | cdataEncode }}</content:encoded>
+        <itunes:keywords>{{ post.data.keywords }}</itunes:keywords>
+        <itunes:image href='{{ post.data["id3-image"] }}'></itunes:image>
+        <itunes:author>{{ metadata.author.name }}</itunes:author>
+        <category>{{metadata.podcastFeed.category}}</category>
+        <itunes:explicit>{{ metadata.podcastFeed.explicit }}</itunes:explicit>
+        <enclosure url='{{ post.data.mp3 }}' type="audio/mpeg" length='{{post.data["id3-enclosure-length"]}}' />
+        <guid isPermaLink="false">{{ post.data.mp3 }}</guid>
+        <itunes:duration>{{ post.data["id3-duration"]}}</itunes:duration>
+        <pubDate>{{post.date | rssDate }}</pubDate>
+      </item>
+    {%- endfor %}
+  </channel>
+</rss>
