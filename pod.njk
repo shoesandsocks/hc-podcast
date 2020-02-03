@@ -61,7 +61,7 @@ permalink: /pod.xml
         <itunes:episodeType>{{metadata.podcastFeed.episodeType}}</itunes:episodeType>
         <description>{{ post.data.description | cdataEncode }}</description>
         <itunes:summary>{{ post.data.summary | cdataEncode }}</itunes:summary>
-        <content:encoded>{{ post.data.summary | cdataEncode }}</content:encoded>
+        <content:encoded>{{ post.data["id3-title"] | cdataEncode }}</content:encoded>
         <itunes:keywords>{{ post.data.keywords }}</itunes:keywords>
         <itunes:image href='{{ post.data["id3-image"] }}'></itunes:image>
         <itunes:author>{{ metadata.author.name }}</itunes:author>
