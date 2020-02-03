@@ -1,0 +1,3 @@
+{% for item in collections.podcasts %}
+<p><a href="/episodes/{{ item.data.episode }}/index.html">{{ item.data.episode }}</a></p>
+{% endfor %}

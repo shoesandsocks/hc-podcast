@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: episode.njk
 episode: "no-motorcycles-after-3-pm"
 title: "No motorcycles after 3 PM."
 subtitle: "Thus sayeth Howard"

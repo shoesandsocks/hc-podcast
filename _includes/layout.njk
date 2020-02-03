@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Howard the Podcast</title>
+    <!-- capture the CSS content as a Nunjucks variable -->
+    {% set css %}
+      {% include "all.css" %}
+    {% endset %}
+    <!-- feed it through our cssmin filter to minify -->
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
   </head>
-  <style>
-    body {
-      padding: 1rem;
-      font-family: Avenir, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
-  </style>
   <body>
     {{ content | safe }}
   </body>
