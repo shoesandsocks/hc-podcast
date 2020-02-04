@@ -60,10 +60,10 @@ permalink: /pod.xml
         <itunes:episode>{{ post.data["id3-track"] }}</itunes:episode>
         <itunes:episodeType>{{metadata.podcastFeed.episodeType}}</itunes:episodeType>
         <description>
-          {{ post.data.description | cdataEncode }}
+          {{ post.data.description }}
         </description>
         <itunes:summary>
-          {{ post.data.summary | cdataEncode }}
+          {{ post.data.summary }}
         </itunes:summary>
         <content:encoded>
           {{ post.data["id3-title"] | cdataEncode }}
