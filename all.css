@@ -117,3 +117,29 @@ body {
 #episode-main * {
 	margin: 2rem 0;
 }
+
+#episode-main p {
+	font-size: 7rem;
+	max-width: 95%;
+	text-align: center;
+}
+@media screen and (min-width: 600px) {
+	#episode-main p {
+		max-width: 80%;
+	}
+}
+@media screen and (min-width: 750px) {
+	#episode-main p {
+		max-width: 70%;
+	}
+}
+@media screen and (min-width: 900px) {
+	#episode-main p {
+		max-width: 60%;
+	}
+}
+@media screen and (min-width: 1050px) {
+	#episode-main p {
+		max-width: 50%;
+	}
+}
