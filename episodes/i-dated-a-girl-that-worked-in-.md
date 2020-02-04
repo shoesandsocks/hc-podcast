@@ -26,7 +26,7 @@ id3-image: https://www.porknachos.com/files/podcasts/chk.jpg
 id3-copyright: CC BY 4.0
 id3-explicit: clean
 ---
-Bort dated a girl that worked in the Haunted Mansion, before goth was a thing.
+I dated a girl that worked in the Haunted Mansion, before goth was a thing.
 
 <audio controls>
   <source src="https://www.porknachos.com/files/podcasts/howard/i-dated-a-girl-that-worked-in-.mp3">
