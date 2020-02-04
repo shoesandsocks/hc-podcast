@@ -9,12 +9,6 @@ module.exports = function(eleventyConfig) {
     return new CleanCSS({}).minify(code).styles;
   });
 
-  // eleventyConfig.addFilter("markdowned", string => {
-  //   const md = new markdownIt();
-  //   const info = md.render(string).trim();
-  //   return info;
-  // })
-
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setTemplateFormats(["md", "njk", "html"]);
 
