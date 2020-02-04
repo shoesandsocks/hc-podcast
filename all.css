@@ -1,3 +1,7 @@
+:root {
+	--black: #0d0d0d;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,17 +56,64 @@ body {
 }
 
 #front-main {
-  min-height: 95vh;
+	min-height: 95vh;
+	background-color: var(--black);
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
+	justify-content: center;
+	color: white;
+}
+
+#front-main h1 {
+	font-size: 5rem;
+}
+#rss-link {
+	font-size: 1.5rem;
+	margin-bottom: .5rem;
+}
+#rss-link a,
+.episode-link a,
+.episode-link a:visited {
+	color: white;
+	transition: all 0.5s;
+}
+
+#rss-link a:hover,
+#rss-link a:focus,
+.episode-link a:hover,
+.episode-link a:focus {
+	color: orange;
+}
+#chk {
+	max-width: 300px;
+}
+#ul-title {
+	margin-bottom: 2rem;
+}
+#front-main ul {
+	max-width: 60%;
+}
+#front-main li {
+	margin-bottom: 2rem;
+}
+.episode-link {
+	text-align: center;
+	font-size: 1rem;
 }
 
 #episode-main {
   min-height: 95vh;
-  width: 100%;
   background-color: orange;
-  color: #3d3d3d;
+	color: var(--black);
+	/* width: 100%; */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+	justify-content: center;
+}
+
+#episode-main * {
+	margin: 2rem 0;
 }

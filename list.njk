@@ -1,3 +1,12 @@
-{% for item in collections.podcasts %}
-<p><a href="/episodes/{{ item.data.episode }}/index.html">{{ item.data.episode }}</a></p>
+<p id="ul-title">
+  Here's a list of recent episodes
+</p>
+<ul>
+  {% for item in collections.podcasts | reverse %}
+  <li>
+    <p class="episode-link">
+      <a href="/episodes/{{ item.data.episode }}/index.html">{{item.data['id3-track']}}. {{ item.data.title }}</a>
+    </p>
+  </li>
 {% endfor %}
+</ul>
