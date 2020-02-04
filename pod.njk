@@ -25,8 +25,8 @@ permalink: /pod.xml
       <url>{{metadata.podcastFeed.image}}</url>
       <title>{{ metadata.podcastFeed.title }}</title>
       <link>{{ metadata.podcastFeed.link }}</link>
-      <width>300</width>
-      <height>300</height>
+      <width>{{metadata.podcastFeed.imageSize }}</width>
+      <height>{{metadata.podcastFeed.imageSize }}</height>
     </image>
 
     <itunes:image href="{{ metadata.podcastFeed.image}}" />
@@ -59,14 +59,12 @@ permalink: /pod.xml
         <itunes:subtitle>{{ post.data.subtitle }}</itunes:subtitle>
         <itunes:episode>{{ post.data["id3-track"] }}</itunes:episode>
         <itunes:episodeType>{{metadata.podcastFeed.episodeType}}</itunes:episodeType>
-        <description>
-          {{ post.data.description }}
-        </description>
-        <itunes:summary>
-          {{ post.data.summary }}
-        </itunes:summary>
+        <description>{{ post.data.description }}</description>
+        <itunes:summary>{{ post.data.summary }}</itunes:summary>
+        {% set open = '<![CDATA[' %}
+        {% set close = ']]>' %}
         <content:encoded>
-          {{ post.data["id3-title"] | cdataEncode }}
+          {{ open }}{{ post.data["id3-title"] }}{{ close }}
         </content:encoded>
         <itunes:keywords>{{ post.data.keywords }}</itunes:keywords>
         <itunes:image href='{{ post.data["id3-image"] }}'></itunes:image>

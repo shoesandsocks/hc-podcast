@@ -16,6 +16,7 @@
     "updatePeriod": "hourly",
     "updateFrequency": "1",
     "image": "https://www.porknachos.com/files/podcasts/chk.jpg",
+    "imageSize": "1600",
     "category": "Comedy",
     "subcategory": "Improv",
     "keywords": "howard chicken B2W",
