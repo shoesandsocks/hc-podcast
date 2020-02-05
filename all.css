@@ -104,7 +104,7 @@ body {
 }
 
 #episode-main {
-  min-height: 95vh;
+  min-height: 100vh;
   background-color: orange;
 	color: var(--black);
 	/* width: 100%; */
@@ -112,17 +112,27 @@ body {
   flex-flow: column nowrap;
   align-items: center;
 	justify-content: center;
+	position: relative;
 }
 
 #episode-main * {
 	margin: 2rem 0;
 }
 
-#episode-main p {
+#episode-main * {
 	font-size: 4rem;
 	max-width: 95%;
 	text-align: center;
 }
+
+#emoji {
+	font-size: 11rem;
+	position: fixed;
+	bottom: -6rem;
+	left: -3rem;
+	transform: rotate(45deg);
+}
+
 @media screen and (min-width: 600px) {
 	#episode-main p {
 		max-width: 80%;
