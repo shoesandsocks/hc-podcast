@@ -8,7 +8,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
   });
-
+  eleventyConfig.addFilter("parseInt", function(str) {
+    return parseInt(str, 10);
+  });
+  eleventyConfig.addFilter("limit", function(arr, num) {
+    return arr.slice(0, num);
+  });
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setTemplateFormats(["md", "njk", "html"]);
   eleventyConfig.addPassthroughCopy("assets");

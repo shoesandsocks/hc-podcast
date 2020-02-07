@@ -18,7 +18,7 @@ id3-url: "https://www.porknachos.com/files/podcasts/howard/they-keep-following-u
 mp3: "https://www.porknachos.com/files/podcasts/howard/they-keep-following-up.mp3"
 id3-title: "They keep following up."
 id3-artist: "Howard Chicken"
-id3-track: 0000010
+id3-track: "0000010"
 id3-album: "Quotes from Howard Chicken - a podcast"
 id3-year: "2020"
 id3-genre: "Humor"

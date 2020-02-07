@@ -18,7 +18,7 @@ id3-url: "https://www.porknachos.com/files/podcasts/howard/i-had-a-lunch-sandwic
 mp3: "https://www.porknachos.com/files/podcasts/howard/i-had-a-lunch-sandwich-for-bre.mp3"
 id3-title: "I had a lunch sandwich for breakfast."
 id3-artist: "Howard Chicken"
-id3-track: 0000011
+id3-track: "0000011"
 id3-album: "Quotes from Howard Chicken - a podcast"
 id3-year: "2020"
 id3-genre: "Humor"

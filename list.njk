@@ -2,11 +2,12 @@
   Here's a list of recent episodes
 </p>
 <ul>
-  {% for item in collections.podcasts | reverse %}
+  {% for item in collections.podcasts | reverse | limit(7) %}
   <li>
     <p class="episode-link">
-      <a href="/episodes/{{ item.data.episode }}/index.html">{{item.data['id3-track']}}. {{ item.data.title }}</a>
+      <a href="/episodes/{{ item.data.episode }}/index.html">{{item.data['id3-track'] | parseInt }}. {{ item.data.title }}</a>
     </p>
   </li>
 {% endfor %}
 </ul>
+<p style="margin-bottom: 2rem;">Here's a list of <a style="color: orange;" href="./all">all episodes</a><p>

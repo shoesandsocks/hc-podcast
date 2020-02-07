@@ -18,7 +18,7 @@ id3-url: "https://www.porknachos.com/files/podcasts/howard/i-commend-you.mp3"
 mp3: "https://www.porknachos.com/files/podcasts/howard/i-commend-you.mp3"
 id3-title: "I commend you."
 id3-artist: "Howard Chicken"
-id3-track: 0000012
+id3-track: "0000012"
 id3-album: "Quotes from Howard Chicken - a podcast"
 id3-year: "2020"
 id3-genre: "Humor"

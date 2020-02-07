@@ -1,0 +1,13 @@
+---
+layout: main.njk
+---
+<h1 style="margin-bottom: 3rem;">All episodes</h1>
+<ul>
+  {% for item in collections.podcasts | reverse %}
+  <li>
+    <p class="episode-link">
+      <a href="/episodes/{{ item.data.episode }}/index.html">{{item.data['id3-track'] | parseInt }}. {{ item.data.title }}</a>
+    </p>
+  </li>
+{% endfor %}
+</ul>

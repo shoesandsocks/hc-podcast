@@ -18,7 +18,7 @@ id3-url: "https://www.porknachos.com/files/podcasts/howard/alexa-go-home-youre-d
 mp3: "https://www.porknachos.com/files/podcasts/howard/alexa-go-home-youre-drunk.mp3"
 id3-title: "ALEXA, GO HOME, YOU'RE DRUNK!"
 id3-artist: "Howard Chicken"
-id3-track: 0000014
+id3-track: "000014"
 id3-album: "Quotes from Howard Chicken - a podcast"
 id3-year: "2020"
 id3-genre: "Humor"

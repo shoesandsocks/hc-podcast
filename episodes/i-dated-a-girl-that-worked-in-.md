@@ -18,7 +18,7 @@ id3-url: https://www.porknachos.com/files/podcasts/howard/i-dated-a-girl-that-wo
 mp3: https://www.porknachos.com/files/podcasts/howard/i-dated-a-girl-that-worked-in-.mp3
 id3-title: I dated a girl that worked in the Haunted Mansion, before goth was a thing.
 id3-artist: Howard Chicken
-id3-track: 0000004
+id3-track: "0000004"
 id3-album: Quotes from Howard Chicken - a podcast
 id3-year: 2020
 id3-genre: Humor

@@ -18,7 +18,7 @@ id3-url: https://www.porknachos.com/files/podcasts/howard/a-plum-is-to-a-prune-a
 mp3: https://www.porknachos.com/files/podcasts/howard/a-plum-is-to-a-prune-as-a-grap.mp3
 id3-title: A plum is to a prune, as a grape is to a raisin. So they say.
 id3-artist: Howard Chicken
-id3-track: 0000005
+id3-track: "0000005"
 id3-album: Quotes from Howard Chicken - a podcast
 id3-year: 2020
 id3-genre: Humor
