@@ -6,7 +6,7 @@ subtitle: "Thus sayeth Howard"
 permalink: "/episodes/its-so-easy-to-not-do-it/index.html"
 description: "A quote from Howard"
 summary: "I mean..."
-date: 2020-02-12T14:49:00-5
+date: 2020-02-12T14:42:00-5
 keywords: "It's so easy to not do it!"
 tags:
   - howard

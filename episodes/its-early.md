@@ -6,7 +6,7 @@ subtitle: "Thus sayeth Howard"
 permalink: "/episodes/its-early/index.html"
 description: "A quote from Howard"
 summary: "I mean..."
-date: 2020-02-12T14:55:00-5
+date: 2020-02-12T14:58:00-5
 keywords: "It's early."
 tags:
   - howard
