@@ -70,6 +70,7 @@ body {
 	font-size: 5rem;
 }
 #rss-link {
+	text-align: center;
 	font-size: 1.5rem;
 	margin-bottom: .5rem;
 }
