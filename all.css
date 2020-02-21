@@ -1,5 +1,5 @@
 :root {
-	--black: #0d0d0d;
+	--black: #333;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -67,11 +67,10 @@ body {
 }
 
 #front-main h1 {
-	font-size: 5rem;
+	font-size: 2rem;
 }
 #rss-link {
 	text-align: center;
-	font-size: 1.5rem;
 	margin-bottom: .5rem;
 }
 #rss-link a,
@@ -87,9 +86,7 @@ body {
 .episode-link a:focus {
 	color: orange;
 }
-#chk {
-	max-width: 300px;
-}
+
 #ul-title {
 	margin-bottom: 2rem;
 }
@@ -103,7 +100,10 @@ body {
 	text-align: center;
 	font-size: 1rem;
 }
-
+#chk {
+	max-width: 66%;
+	margin: 2rem;
+}
 #episode-main {
   min-height: 100vh;
   background-color: orange;
