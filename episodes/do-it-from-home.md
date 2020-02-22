@@ -6,7 +6,7 @@ subtitle: "Thus sayeth Howard"
 permalink: "/episodes/do-it-from-home/index.html"
 description: "A quote from Howard"
 summary: "I mean..."
-date: 2020-02-22T00:03:00-5
+date: 2020-02-22T00:01:00-5
 keywords: "Do it from home."
 tags:
   - howard
