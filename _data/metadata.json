@@ -1,13 +1,13 @@
 {
-  "title": "Quotes from Howard Chicken",
-  "url": "https://howardchicken.com",
+  "title": "The H Gang",
+  "url": "https://podcast.howardchicken.online",
   "description": "That bird. That voice.",
   "author": {
     "name": "Howard",
     "email": "howard@howardchicken.com"
   },
   "podcastFeed": {
-    "title": "Quotes from Howard Chicken - a Podcast",
+    "title": "The H Gang",
     "link": "https://vigorous-euler-8ffe12.netlify.com",
     "language": "en-us",
     "copyright": "This work is licensed under a Creative Commons License - Attribution 4.0 International (CC BY 4.0)",

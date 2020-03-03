@@ -69,19 +69,13 @@ body {
 #front-main h1 {
 	font-size: 2rem;
 }
-#rss-link {
-	text-align: center;
-	margin-bottom: .5rem;
-}
-#rss-link a,
+
 .episode-link a,
 .episode-link a:visited {
 	color: white;
 	transition: all 0.5s;
 }
 
-#rss-link a:hover,
-#rss-link a:focus,
 .episode-link a:hover,
 .episode-link a:focus {
 	color: orange;
