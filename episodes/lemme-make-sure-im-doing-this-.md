@@ -4,8 +4,8 @@ episode: "lemme-make-sure-im-doing-this-"
 title: "Lemme make sure I'm doing this right; it's all in my muscles:"
 subtitle: "Thus sayeth Howard"
 permalink: "/episodes/lemme-make-sure-im-doing-this-/index.html"
-description: "A quote from Howard"
-summary: "I mean..."
+description: "Non-sequiturs and so forth"
+summary: "Thoughts from the H Gang"
 date: 2020-02-26T19:28:00-5
 keywords: "Lemme make sure I'm doing this right; it's all in my muscles:"
 tags:
@@ -19,10 +19,10 @@ mp3: "https://www.porknachos.com/files/podcasts/howard/lemme-make-sure-im-doing-
 id3-title: "Lemme make sure I'm doing this right; it's all in my muscles:"
 id3-artist: "Howard Chicken"
 id3-track: "0000084"
-id3-album: "Quotes from Howard Chicken - a podcast"
+id3-album: "The H Gang podcast"
 id3-year: "2020"
 id3-genre: "Humor"
-id3-image: "https://www.porknachos.com/files/podcasts/chk.jpg"
+id3-image: "https://www.porknachos.com/files/podcasts/howard/h-gang-bold.jpg"
 id3-copyright: "CC BY 4.0"
 id3-explicit: "clean"
 ---
