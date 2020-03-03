@@ -19,7 +19,7 @@ mp3: "https://www.porknachos.com/files/podcasts/howard/i-threw-out-half-the-brea
 id3-title: "I threw out half the bread."
 id3-artist: "Howard Chicken"
 id3-track: "0000087"
-id3-album: "Quotes from Howard Chicken - a podcast"
+id3-album: "The H Gang podcast"
 id3-year: "2020"
 id3-genre: "Humor"
 id3-image: "https://www.porknachos.com/files/podcasts/howard/h-gang-bold.jpg"
