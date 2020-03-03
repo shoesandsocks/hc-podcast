@@ -1,21 +1,43 @@
 ---
-layout: main.njk
+layout: layout.njk
 ---
 
-<img id="chk" src="https://www.porknachos.com/files/podcasts/howard/h-gang-bold.jpg" />
+<div class="wrap">
+  <section id="main">
+    <img
+      id="h-gang-bold"
+      src="https://www.porknachos.com/files/podcasts/howard/h-gang-bold.jpg"
+    />
 
-<div class="buttons">
-  <a href="/pod.xml">
-    <img src="/assets/button-rss.svg" />
-  </a>
-  <a href="#">
-    <img src="/assets/button-itunes.svg" />
-  </a>
-  <a href="#">
-    <img src="/assets/button-overcast.svg" />
-  </a>
+    <div class="buttons">
+      <a href="/pod.xml">
+        <img src="/assets/button-rss.svg" />
+      </a>
+      <a href="#">
+        <img src="/assets/button-itunes.svg" />
+      </a>
+      <a href="#">
+        <img src="/assets/button-overcast.svg" />
+      </a>
+    </div>
+  </section>
+
+  <div id="sidebar">
+    <div id="about-us">
+      <h2>
+        Welcome to the H Gang.
+      </h2>
+    </div>
+
+    <div id="episode-box">
+      <p>
+        Recent episodes:
+      </p>
+      {% include "list.njk" %}
+
+      <p style="margin-bottom: 2rem;">
+        Here's a list of <a style="color: orange;" href="./all">all episodes</a>
+      </p>
+    </div>
+  </div>
 </div>
-
-<p style="height: 5rem;"></p>
-
-{% include "list.njk" %}

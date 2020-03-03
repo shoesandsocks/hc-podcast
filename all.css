@@ -1,5 +1,8 @@
 :root {
 	--black: #333;
+	--grey: #cacaca;
+	--white: #efefef;
+	--font: 1.5rem Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -51,25 +54,77 @@ table {
 	border-spacing: 0;
 }
 
-body {
-  font-family: Avenir, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.wrap {
+	font: var(--font);
+	min-height: 100vh;
+	display: grid;
+	grid-template-areas: 
+		"main sidebar"
+		"footer footer";
+  background: linear-gradient(to bottom, var(--black) 85%, var(--grey) 100%);
 }
 
-#front-main {
-	min-height: 95vh;
-	background-color: var(--black);
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-	justify-content: center;
-	color: white;
+#main {
+	grid-area: main;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+#h-gang-bold {
+	width: 450px;
+	margin: 6rem 2rem 2rem 2rem;
+}
+.buttons a {
+	text-decoration: none;
+}
+#sidebar {
+	grid-area: sidebar;
+	margin: 6rem 2rem 0 0;
+	max-width: 750px;
+}
+#about-us {
+	color: var(--white);
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	border-top: 1px solid var(--white);
+	border-bottom: 1px solid var(--white);
+	line-height: 2.4rem;
+	font: var(--font);
+	font-size: 1.5rem;
+	min-width: 515px;
+}
+#about-us h2 {
+	font: 3rem Simonetta;
+}
+#episode-box {
+	font: var(--font);
+	color: var(--white);
+	margin: 2rem 0;
 }
 
-#front-main h1 {
-	font-size: 2rem;
+#episode-box ul {
+	background-color: rgba(255,255,255,0.1);
+	padding: .75rem;
+	margin: 1.5rem 0 1.5rem 0;
 }
 
+#episode-box ul li {
+	margin: 2rem 0;
+}
+#episode-box ul li:first-of-type {
+	margin: 0;
+}
+.episode-link {
+	font: 1.5rem Simonetta;
+}
+.ep-num {
+	font: var(--font);
+	font-size: 1.25rem;
+}
+.ep-date {
+	font: var(--font);
+	font-size: .85rem;
+}
 .episode-link a,
 .episode-link a:visited {
 	color: white;
@@ -81,23 +136,7 @@ body {
 	color: orange;
 }
 
-#ul-title {
-	margin-bottom: 2rem;
-}
-#front-main ul {
-	max-width: 60%;
-}
-#front-main li {
-	margin-bottom: 2rem;
-}
-.episode-link {
-	text-align: center;
-	font-size: 1rem;
-}
-#chk {
-	max-width: 400px;
-	margin: 2rem;
-}
+/* NEXT PAGE*/
 #episode-main {
   min-height: 100vh;
   background-color: orange;
@@ -112,12 +151,10 @@ body {
 
 #episode-main * {
 	margin: 2rem 0;
-}
-
-#episode-main * {
-	font-size: 4rem;
+	font: 4rem Simonetta;
 	max-width: 95%;
 	text-align: center;
+	
 }
 
 #emoji {
@@ -127,7 +164,7 @@ body {
 	left: -3rem;
 	transform: rotate(45deg);
 }
-
+/* 
 @media screen and (min-width: 600px) {
 	#episode-main p {
 		max-width: 80%;
@@ -147,4 +184,4 @@ body {
 	#episode-main p {
 		max-width: 50%;
 	}
-}
+} */
