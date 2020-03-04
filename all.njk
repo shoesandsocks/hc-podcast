@@ -1,11 +1,17 @@
-<img style="max-width: 300px; margin: 3rem;" src="https://www.porknachos.com/files/podcasts/howard/chk.jpg" />
-<h1 style="margin: 3rem;">All episodes</h1>
-<ul>
-  {% for item in collections.podcasts | reverse %}
-  <li>
-    <p class="episode-link">
-      <a href="/episodes/{{ item.data.episode }}/index.html">{{item.data['id3-track'] | parseInt }}. {{ item.data.title }}</a>
-    </p>
-  </li>
-{% endfor %}
-</ul>
+---
+layout: layout.njk
+---
+
+<div class="all-episodes-wrap">
+  <h1>All episodes</h1>
+  <ul>
+    {% for item in collections.podcasts | reverse %}
+    <li>  
+      <p>
+        <a class="all-ep-a" href="/episodes/{{ item.data.episode }}/index.html">
+          <span class="ep-num">{{item.data['id3-track'] | parseInt }}.</span> {{ item.data.title }}</a>
+      </p>
+    </li>
+  {% endfor %}
+  </ul>
+</div>

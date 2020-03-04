@@ -96,25 +96,31 @@ table {
 #about-us h2 {
 	font: 3rem Simonetta;
 }
-#episode-box {
+#episode-box,
+.all-episodes-wrap {
 	font: var(--font);
 	color: var(--white);
 	margin: 2rem 0;
 }
 
-#episode-box ul {
+#episode-box ul,
+.all-episodes-wrap ul {
 	background-color: rgba(255,255,255,0.1);
 	padding: .75rem;
 	margin: 1.5rem 0 1.5rem 0;
 }
 
-#episode-box ul li {
+#episode-box ul li,
+.all-episodes-wrap ul li {
 	margin: 2rem 0;
 }
-#episode-box ul li:first-of-type {
+#episode-box ul li:first-of-type,
+.all-episodes-wrap ul li:first-of-type {
 	margin: 0;
 }
-.episode-link {
+
+.episode-link,
+.all-episodes-wrap ul li p {
 	font: 1.5rem Simonetta;
 }
 .ep-num {
@@ -126,13 +132,17 @@ table {
 	font-size: .85rem;
 }
 .episode-link a,
-.episode-link a:visited {
+.episode-link a:visited
+.all-ep-a,
+.all-ep-a:visited {
 	color: white;
 	transition: all 0.5s;
 }
 
 .episode-link a:hover,
-.episode-link a:focus {
+.episode-link a:focus,
+.all-ep-a:hover,
+.all-ep-a:focus {
 	color: orange;
 }
 
@@ -185,3 +195,24 @@ table {
 		max-width: 50%;
 	}
 } */
+
+.all-episodes-wrap {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding-top: 4rem;
+	background: linear-gradient(to bottom, var(--black) 85%, var(--grey) 100%);
+	min-height: 100vh;
+}
+
+.all-episodes-wrap h1 {
+	font: 3rem Simonetta;
+	color: var(--white);
+}
+.all-episodes-wrap ul {
+	width: 50%;
+	min-width: 350px;
+}
+.all-ep-a {
+	color: var(--white);
+}
