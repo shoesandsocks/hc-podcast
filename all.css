@@ -174,7 +174,7 @@ table {
 	left: -3rem;
 	transform: rotate(45deg);
 }
-/* 
+
 @media screen and (min-width: 600px) {
 	#episode-main p {
 		max-width: 80%;
@@ -194,7 +194,7 @@ table {
 	#episode-main p {
 		max-width: 50%;
 	}
-} */
+}
 
 .all-episodes-wrap {
 	display: flex;
@@ -215,4 +215,23 @@ table {
 }
 .all-ep-a {
 	color: var(--white);
+}
+
+@media screen and (max-width: 1030px) {
+	.wrap {
+		grid-template-areas: 
+		"main"
+		"sidebar"
+		"footer";
+		background: linear-gradient(to bottom, var(--black) 97%, var(--grey) 100%);
+	}
+	#sidebar {
+		margin: unset;
+		max-width: unset;
+		padding-top: 6rem;
+		display: flex;
+		flex-flow: column nowrap;
+		width: 100%;
+		align-items: center;
+	}
 }
