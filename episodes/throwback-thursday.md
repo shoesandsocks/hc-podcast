@@ -18,7 +18,7 @@ id3-url: "https://www.porknachos.com/files/podcasts/howard/../fileserver/public/
 mp3: "https://www.porknachos.com/files/podcasts/howard/../fileserver/public/podcasts/phrases/throwback-thursday.mp3"
 id3-title: "throwback-thursday"
 id3-artist: "Howard Chicken"
-id3-track: "0000100"
+id3-track: "0000088"
 id3-album: "The H Gang Podcast"
 id3-year: "2020"
 id3-genre: "Humor"
