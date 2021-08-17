@@ -1,5 +1,5 @@
 {
-  "name": "@shoesandsocks/HowardThePodcast",
+  "name": "@shoesandsocks/howardthepodcast",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "RL Brown <rlbrown72@gmail.com> (https://www.rich-text.net)",
+  "author": "RL Brown <rich@pineandvine.com> (https://www.rich-text.net)",
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy-plugin-rss": "^1.1.1",
