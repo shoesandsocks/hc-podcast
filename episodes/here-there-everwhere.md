@@ -18,9 +18,7 @@ id3-url: "https://www.porknachos.com/files/podcasts/howard/here-there-everwhere.
 mp3: "https://www.porknachos.com/files/podcasts/howard/here-there-everwhere.mp3"
 id3-title: "Here, there, everwhere!"
 id3-artist: "Howard Chicken"
-id3-track: "000
-35
-"
+id3-track: "35"
 id3-album: "The H Gang Podcast"
 id3-year: "2020"
 id3-genre: "Humor"
