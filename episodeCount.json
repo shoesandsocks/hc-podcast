@@ -1,0 +1,7 @@
+---
+count: collections.podcasts.count
+---
+
+{
+  "count": "{{count}}"
+}
