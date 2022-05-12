@@ -16,6 +16,6 @@
     "slugify": "^1.6.5"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0"
+    "@11ty/eleventy": "^1.0.1"
   }
 }
