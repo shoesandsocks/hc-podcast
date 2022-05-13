@@ -18,9 +18,7 @@ id3-url: "https://www.porknachos.com/files/podcasts/howard/with-the-glavin-and-t
 mp3: "https://www.porknachos.com/files/podcasts/howard/with-the-glavin-and-the-gloive.mp3"
 id3-title: "with the glavin and the gloiven"
 id3-artist: "Howard Chicken"
-id3-track: "000
-36
-"
+id3-track: 36
 id3-album: "The H Gang Podcast"
 id3-year: "2020"
 id3-genre: "Humor"
