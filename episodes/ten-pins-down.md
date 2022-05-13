@@ -18,9 +18,7 @@ id3-url: "https://www.porknachos.com/files/podcasts/howard/ten-pins-down.mp3"
 mp3: "https://www.porknachos.com/files/podcasts/howard/ten-pins-down.mp3"
 id3-title: "Ten Pins Down"
 id3-artist: "Howard Chicken"
-id3-track: "000
-37
-"
+id3-track: "0000037"
 id3-album: "The H Gang Podcast"
 id3-year: "2020"
 id3-genre: "Humor"
