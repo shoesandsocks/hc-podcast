@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "remove": "rm -rf _site",
-    "moveit": "rsync -ruhp _site rich@dialysisiq:/websites/the-h-gang",
+    "moveit": "rsync -ruhp _site/ rich@dialysisiq:/websites/the-h-gang",
     "pingme": "curl -X POST 'https://ne2025.tail96dc8.ts.net/notify' -H 'Content-Type: application/json' -d '{\"msg\": \"the-h-gang build complete\" }'",
     "build-up": "npm run remove && npx @11ty/eleventy && npm run moveit && npm run remove && npm run pingme"
   },
