@@ -14,20 +14,20 @@ tags:
 filename: "can-i-have-two-instances-as-yo.mp3"
 id3-duration: 0:00:34.899592
 id3-enclosure-length: 838540
-id3-url: "https://www.porknachos.com/files/podcasts/howard/can-i-have-two-instances-as-yo.mp3"
-mp3: "https://www.porknachos.com/files/podcasts/howard/can-i-have-two-instances-as-yo.mp3"
+id3-url: "https://webserver.tail96dc8.ts.net/podcasts/howard/can-i-have-two-instances-as-yo.mp3"
+mp3: "https://webserver.tail96dc8.ts.net/podcasts/howard/can-i-have-two-instances-as-yo.mp3"
 id3-title: "Can I have two 'instances,' as you say?"
 id3-artist: "Howard Chicken"
 id3-track: "0000085"
 id3-album: "The H Gang podcast"
 id3-year: "2020"
 id3-genre: "Humor"
-id3-image: "https://www.porknachos.com/files/podcasts/howard/h-gang-bold.jpg"
+id3-image: "https://webserver.tail96dc8.ts.net/podcasts/howard/h-gang-bold.jpg"
 id3-copyright: "CC BY 4.0"
 id3-explicit: "clean"
 ---
 Can I have two 'instances,' as you say?
 
 <audio controls>
-  <source src="https://www.porknachos.com/files/podcasts/howard/can-i-have-two-instances-as-yo.mp3">
+  <source src="https://webserver.tail96dc8.ts.net/podcasts/howard/can-i-have-two-instances-as-yo.mp3">
 </audio>
